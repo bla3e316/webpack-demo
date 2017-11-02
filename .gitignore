@@ -2,9 +2,9 @@
 
 # Files to ignore
 .DS_Store
-.idea
-.gitattributes
-.gitignore
+/.gitattributes
+
 
 # Folders to ignore
-node_modules
+/.idea/
+/node_modules/
