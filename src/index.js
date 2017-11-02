@@ -1,7 +1,20 @@
-import _ from 'lodash';
-import  React from 'react';
-import  ReactDom from 'react-dom';
+import React from 'react';
+import { AppContainer } from 'react-hot-loader';
+import ReactDOM  from 'react-dom';
+import AppRouter from './routes';
 
-import Approuter from './routes';
+const render = (Component) =>
+    ReactDOM.render(
+        <AppContainer>
+            <Component />
+        </AppContainer>,
+        document.getElementById('app')
+    );
 
-ReactDom.render(<Approuter />, document.getElementById("app"));
+render(AppRouter);
+if (module.hot) {
+    module.hot.accept('./routes', () => {
+        require('./routes');
+        render(AppRouter);
+    });
+}
