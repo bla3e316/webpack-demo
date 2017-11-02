@@ -1,10 +1,9 @@
 {
   "repository": {
-    "type": "git",
     "url": "git+https://github.com/bla3e316/webpack-demo"
   },
   "scripts": {
-    "build-dev": "export NODE_ENV=development&& babel-node server.js",
+    "build-dev": "export NODE_ENV=development && babel-node server.js",
     "build-prod": "export NODE_ENV=production&& webpack && babel-node server.js"
   },
   "author": "Aleksandr Gomeniuk",
@@ -15,14 +14,15 @@
   "main": ".src/index.js",
   "license": "ISC",
   "keywords": [
-    "react, webpack, babel"
+    "react",
+    "webpack",
+    "babel"
   ],
   "dependencies": {
     "express": "^4.16.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-router": "^4.2.0",
-    "webpack-dev-server": "^2.9.3"
+    "react-router": "^4.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.6",
