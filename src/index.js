@@ -1,3 +1,4 @@
+// noinspection JSAnnotator
 import _ from 'lodash';
 
 function component() {

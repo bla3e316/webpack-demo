@@ -1,19 +1,30 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bla3e316/webpack-demo"
+  },
+  "keywords": [
+    "react, leaflet"
+  ],
+  "author": "Aleksandr Gomeniuk",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/bla3e316/webpack-demo",
   "name": "test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Test Web App",
+  "main": ".src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.4"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "webpack": "^3.8.1"
   }
 }

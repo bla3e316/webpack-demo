@@ -2,9 +2,9 @@
 
 # Files to ignore
 .DS_Store
-.gitattributes
 
 
 # Folders to ignore
 .idea
 node_modules
+.babelrc
