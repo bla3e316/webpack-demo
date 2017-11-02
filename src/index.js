@@ -1,13 +1,7 @@
-// noinspection JSAnnotator
 import _ from 'lodash';
+import  React from 'react';
+import  ReactDom from 'react-dom';
 
-function component() {
-  var element = document.createElement('div');
+import Approuter from './routes';
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+ReactDom.render(<Approuter />, document.getElementById("app"));
